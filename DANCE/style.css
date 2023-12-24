@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+img{
+    height: 300px;
+    width: 200px;
+    filter: drop-shadow(10px 10px 20px rgb(122, 116, 116));
+    animation: dancing 1s infinite ;
+}
+
+@keyframes dancing {
+    0%{
+        scale: 1;
+        transform: rotate(-10deg);
+    }
+    50%{
+        scale: 1.2;
+        transform: rotate(10deg);
+    }
+    100%{
+        scale: 1;
+        transform: rotate(-10deg);
+    }
+}
